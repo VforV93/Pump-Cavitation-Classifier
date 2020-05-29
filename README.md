@@ -21,7 +21,8 @@ Dataset Directory Tree Structure
 ```
 .
 ~ Documents
-├── data-raw
+├── checkpoints
+└── data-raw 
     ├── DS1
     |   ├── 20130110082835continuo.dat
     |   ├── 20130110082907continuo.dat
@@ -57,12 +58,14 @@ conda install --yes --file requirements.txt
 
 ## Running the from_raw_to_csv_and_some_Esa.ipynb
 
-To use the models proposed it is necessary to convert the binary to csv files(*path_prefix='~ Documents'*).\
+To use the models proposed it is necessary to convert the binary to csv files.\
+Set *path_prefix='~ Documents'*(the data-raw folder) and run all the cells\
 Dataset Directory Tree Structure updated:
 ```
 .
 ~ Documents
-├── data-raw
+├── checkpoints
+└── data-raw 
     ├── DS1
     |   ├── 20130110082835continuo.dat
     |   ├── 20130110082907continuo.dat
@@ -99,7 +102,59 @@ Dataset Directory Tree Structure updated:
 
 
 ## Running the filter.ipynb
-
+Set *path_prefix='~ Documents'*(the data-raw folder) and run all the cells to filter the csv files\
+Dataset Directory Tree Structure updated:
+```
+.
+~ Documents
+├── checkpoints
+└── data-raw 
+    ├── DS1
+    |   ├── 20130110082835continuo.dat
+    |   ├── 20130110082907continuo.dat
+    |   ├── 20130110083352continuo.dat
+    |   ├── 20130110084454continuo.dat
+    |   ├── 20130110084754continuo.dat
+    |   ├── 20130110085127continuo.dat
+    |   ├── 20130110090319continuo.dat
+    |   ├── OK1.csv
+    |   ├── OK2.csv
+    |   ├── OK3.csv
+    |   ├── OK4.csv
+    |   ├── IN1.csv
+    |   ├── STANDING1.csv
+    |   ├── STANDING2.csv
+    |   └── FILTERED
+    |       ├── OK1_FILTERED_w5.csv & OK1_FILTERED_w15.csv
+    |       ├── OK2_FILTERED_w5.csv & OK2_FILTERED_w15.csv
+    |       ├── OK3_FILTERED_w5.csv & OK3_FILTERED_w15.csv
+    |       ├── OK4_FILTERED_w5.csv & OK4_FILTERED_w15.csv
+    |       ├── IN1_FILTERED_w5.csv & IN1_FILTERED_w15.csv
+    |       ├── STANDING1_FILTERED_w5.csv & STANDING1_FILTERED_w15.csv
+    |       ├── STANDING2_FILTERED_w5.csv & STANDING2_FILTERED_w15.csv
+    |       └── norm
+    └── DS2
+        ├── 20130111092657continuo.dat
+        ├── 20130111092838continuo.dat
+        ├── 20130111093220continuo.dat
+        ├── 20130111094402continuo.dat
+        ├── 20130111095117continuo.dat
+        ├── 20130111095449continuo.dat
+        ├── OK1.csv
+        ├── IN1.csv
+        ├── STANDING1.csv
+        ├── STANDING2.csv
+        ├── STANDING3.csv
+        ├── STANDING4.csv
+        └── FILTERED
+            ├── OK_FILTERED_w5.csv & OK_FILTERED_w15.csv
+            ├── IN_FILTERED_w5.csv & IN_FILTERED_w15.csv
+            ├── STANDING1_FILTERED_w5.csv & STANDING1_FILTERED_w15.csv
+            ├── STANDING2_FILTERED_w5.csv & STANDING2_FILTERED_w15.csv
+            ├── STANDING3_FILTERED_w5.csv & STANDING3_FILTERED_w15.csv
+            ├── STANDING4_FILTERED_w5.csv & STANDING4_FILTERED_w15.csv
+            └── norm
+```
 
 ### Break down into end to end tests
 
