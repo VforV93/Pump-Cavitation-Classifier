@@ -13,13 +13,14 @@ Installation for Windows
 
 ```
 Python Version 3.6
+Anaconda 1.9.12
 ```
-[Anaconda](https://www.anaconda.com/)
 
+Create the following directory struceture.
 Dataset Directory Tree Structure
 ```
 .
-~Documents
+~ Documents
 ├── data-raw
     ├── DS1
     |   ├── 20130110082835continuo.dat
@@ -57,7 +58,44 @@ conda install --yes --file requirements.txt
 ## Running the from_raw_to_csv_and_some_Esa.ipynb
 
 To use the models proposed it is necessary to convert the binary to csv files.
-In the path *path_prefix* you need the *data-raw/DS1* and *data-raw/DS2* folders which inside there are the binary files.
+Dataset Directory Tree Structure updated:
+```
+.
+~ Documents
+├── data-raw
+    ├── DS1
+    |   ├── 20130110082835continuo.dat
+    |   ├── 20130110082907continuo.dat
+    |   ├── 20130110083352continuo.dat
+    |   ├── 20130110084454continuo.dat
+    |   ├── 20130110084754continuo.dat
+    |   ├── 20130110085127continuo.dat
+    |   ├── 20130110090319continuo.dat
+    |   ├── OK1.csv
+    |   ├── OK2.csv
+    |   ├── OK3.csv
+    |   ├── OK4.csv
+    |   ├── IN1.csv
+    |   ├── STANDING1.csv
+    |   ├── STANDING2.csv
+    |   └── FILTERED
+    |       └── norm
+    └── DS2
+        ├── 20130111092657continuo.dat
+        ├── 20130111092838continuo.dat
+        ├── 20130111093220continuo.dat
+        ├── 20130111094402continuo.dat
+        ├── 20130111095117continuo.dat
+        ├── 20130111095449continuo.dat
+        ├── OK1.csv
+        ├── IN1.csv
+        ├── STANDING1.csv
+        ├── STANDING2.csv
+        ├── STANDING3.csv
+        ├── STANDING4.csv
+        └── FILTERED
+            └── norm
+```
 
 
 ## Running the filter.ipynb
