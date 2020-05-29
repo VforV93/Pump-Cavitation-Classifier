@@ -16,6 +16,32 @@ Python Version 3.6
 ```
 [Anaconda](https://www.anaconda.com/)
 
+Dataset Directory Tree Structure
+```
+.
+~Documents
+├── data-raw
+    ├── DS1
+    |   ├── 20130110082835continuo.dat
+    |   ├── 20130110082907continuo.dat
+    |   ├── 20130110083352continuo.dat
+    |   ├── 20130110084454continuo.dat
+    |   ├── 20130110084754continuo.dat
+    |   ├── 20130110085127continuo.dat
+    |   ├── 20130110090319continuo.dat
+    |   └── FILTERED
+    |       └── norm
+    └── DS2
+        ├── 20130111092657continuo.dat
+        ├── 20130111092838continuo.dat
+        ├── 20130111093220continuo.dat
+        ├── 20130111094402continuo.dat
+        ├── 20130111095117continuo.dat
+        ├── 20130111095449continuo.dat
+        └── FILTERED
+            └── norm
+```
+
 ### Installing
 
 Create a new conda enviroment
@@ -35,19 +61,7 @@ In the path *path_prefix* you need the *data-raw/DS1* and *data-raw/DS2* folders
 
 
 ## Running the filter.ipynb
-```
-.
-├── dir1
-│   ├── file11.ext
-│   └── file12.ext
-├── dir2
-│   ├── file21.ext
-│   ├── file22.ext
-│   └── file23.ext
-├── dir3
-├── file_in_root.ext
-└── README.md
-```
+
 
 ### Break down into end to end tests
 
