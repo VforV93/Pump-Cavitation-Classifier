@@ -57,7 +57,7 @@ conda install --yes --file requirements.txt
 
 ## Running the from_raw_to_csv_and_some_Esa.ipynb
 
-To use the models proposed it is necessary to convert the binary to csv files.
+To use the models proposed it is necessary to convert the binary to csv files(*path_prefix='~ Documents'*).\
 Dataset Directory Tree Structure updated:
 ```
 .
