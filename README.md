@@ -13,8 +13,8 @@ Installation for Windows
 
 ```
 Python Version 3.6
-[Anaconda](https://www.anaconda.com/)
 ```
+[Anaconda](https://www.anaconda.com/)
 
 ### Installing
 
@@ -31,7 +31,23 @@ conda install --yes --file requirements.txt
 ## Running the from_raw_to_csv_and_some_Esa.ipynb
 
 To use the models proposed it is necessary to convert the binary to csv files.
+In the path *path_prefix* you need the *data-raw/DS1* and *data-raw/DS2* folders which inside there are the binary files.
 
+
+## Running the filter.ipynb
+```
+.
+├── dir1
+│   ├── file11.ext
+│   └── file12.ext
+├── dir2
+│   ├── file21.ext
+│   ├── file22.ext
+│   └── file23.ext
+├── dir3
+├── file_in_root.ext
+└── README.md
+```
 
 ### Break down into end to end tests
 
