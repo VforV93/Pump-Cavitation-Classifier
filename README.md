@@ -16,7 +16,7 @@ Python Version 3.6
 Anaconda 1.9.12
 ```
 
-Create the following directory struceture.
+Create the following directory structure.\
 Dataset Directory Tree Structure
 ```
 .
