@@ -156,12 +156,93 @@ Dataset Directory Tree Structure updated:
             └── norm
 ```
 
-### Break down into end to end tests
-
-Explain what these tests test and why
+## Running the normalization.py
+Two kind of normalization will be compared(on the enire dataset vs the window normalization). The normalization.py is necessary to perform a window normalization on all the files and to store them on the file system. We could decide if applying a typical normalization on all entire dataset(we can do at runtime because it's fast) or using the preprocessed normalized csv files(procedure too slow at runtime).\
+Set *path_prefix='~ Documents'*(the data-raw folder) and run the file.(It may require few minutes!)
 
 ```
-Give an example
+.
+~ Documents
+├── checkpoints
+└── data-raw 
+    ├── DS1
+    |   ├── 20130110082835continuo.dat
+    |   ├── 20130110082907continuo.dat
+    |   ├── 20130110083352continuo.dat
+    |   ├── 20130110084454continuo.dat
+    |   ├── 20130110084754continuo.dat
+    |   ├── 20130110085127continuo.dat
+    |   ├── 20130110090319continuo.dat
+    |   ├── OK1.csv
+    |   ├── OK2.csv
+    |   ├── OK3.csv
+    |   ├── OK4.csv
+    |   ├── IN1.csv
+    |   ├── STANDING1.csv
+    |   ├── STANDING2.csv
+    |   └── FILTERED
+    |       ├── OK1_FILTERED_w5.csv & OK1_FILTERED_w15.csv
+    |       ├── OK2_FILTERED_w5.csv & OK2_FILTERED_w15.csv
+    |       ├── OK3_FILTERED_w5.csv & OK3_FILTERED_w15.csv
+    |       ├── OK4_FILTERED_w5.csv & OK4_FILTERED_w15.csv
+    |       ├── IN1_FILTERED_w5.csv & IN1_FILTERED_w15.csv
+    |       ├── STANDING1_FILTERED_w5.csv & STANDING1_FILTERED_w15.csv
+    |       ├── STANDING2_FILTERED_w5.csv & STANDING2_FILTERED_w15.csv
+    |       └── norm
+    |           ├── OK1_2_w5_norm_25k.csv & OK1_2_w15_norm_25k.csv
+    |           ├── OK1_2_w5_norm_75k.csv & OK1_2_w15_norm_75k.csv
+    |           ├── OK1_2_w5_norm_150k.csv & OK1_2_w15_norm_150k.csv
+    |           ├── OK3_4_w5_norm_25k.csv & OK3_4_w15_norm_25k.csv
+    |           ├── OK3_4_w5_norm_75k.csv & OK3_4_w15_norm_75k.csv
+    |           ├── OK3_4_w5_norm_150k.csv & OK3_4_w15_norm_150k.csv
+    |           ├── IN1_w5_norm_25k.csv & IN1_w15_norm_25k.csv
+    |           ├── IN1_w5_norm_75k.csv & IN1_w15_norm_75k.csv
+    |           ├── IN1_w5_norm_150k.csv & IN1_w15_norm_150k.csv
+    |           ├── STANDING1_w5_norm_25k.csv & STANDING1_w15_norm_25k.csv
+    |           ├── STANDING1_w5_norm_75k.csv & STANDING1_w15_norm_75k.csv
+    |           ├── STANDING1_w5_norm_150k.csv & STANDING1_w15_norm_150k.csv
+    |           ├── STANDING2_w5_norm_25k.csv & STANDING2_w15_norm_25k.csv
+    |           ├── STANDING2_w5_norm_75k.csv & STANDING2_w15_norm_75k.csv
+    |           └── STANDING2_w5_norm_150k.csv & STANDING2_w15_norm_150k.csv
+    └── DS2
+        ├── 20130111092657continuo.dat
+        ├── 20130111092838continuo.dat
+        ├── 20130111093220continuo.dat
+        ├── 20130111094402continuo.dat
+        ├── 20130111095117continuo.dat
+        ├── 20130111095449continuo.dat
+        ├── OK1.csv
+        ├── IN1.csv
+        ├── STANDING1.csv
+        ├── STANDING2.csv
+        ├── STANDING3.csv
+        ├── STANDING4.csv
+        └── FILTERED
+            ├── OK_FILTERED_w5.csv & OK_FILTERED_w15.csv
+            ├── IN_FILTERED_w5.csv & IN_FILTERED_w15.csv
+            ├── STANDING1_FILTERED_w5.csv & STANDING1_FILTERED_w15.csv
+            ├── STANDING2_FILTERED_w5.csv & STANDING2_FILTERED_w15.csv
+            ├── STANDING3_FILTERED_w5.csv & STANDING3_FILTERED_w15.csv
+            ├── STANDING4_FILTERED_w5.csv & STANDING4_FILTERED_w15.csv
+            └── norm
+                ├── OK_w5_norm_25k.csv & OK_w15_norm_25k.csv
+                ├── OK_w5_norm_75k.csv & OK_w15_norm_75k.csv
+                ├── OK_w5_norm_150k.csv & OK_w15_norm_150k.csv
+                ├── IN_w5_norm_25k.csv & IN_w15_norm_25k.csv
+                ├── IN_w5_norm_75k.csv & IN_w15_norm_75k.csv
+                ├── IN_w5_norm_150k.csv & IN_w15_norm_150k.csv
+                ├── STANDING1_w5_norm_25k.csv & STANDING1_w15_norm_25k.csv
+                ├── STANDING1_w5_norm_75k.csv & STANDING1_w15_norm_75k.csv
+                ├── STANDING1_w5_norm_150k.csv & STANDING1_w15_norm_150k.csv
+                ├── STANDING2_w5_norm_25k.csv & STANDING2_w15_norm_25k.csv
+                ├── STANDING2_w5_norm_75k.csv & STANDING2_w15_norm_75k.csv
+                ├── STANDING2_w5_norm_150k.csv & STANDING2_w15_norm_150k.csv
+                ├── STANDING3_w5_norm_25k.csv & STANDING3_w15_norm_25k.csv
+                ├── STANDING3_w5_norm_75k.csv & STANDING3_w15_norm_75k.csv
+                ├── STANDING3_w5_norm_150k.csv & STANDING3_w15_norm_150k.csv
+                ├── STANDING4_w5_norm_25k.csv & STANDING4_w15_norm_25k.csv
+                ├── STANDING4_w5_norm_75k.csv & STANDING4_w15_norm_75k.csv
+                └── STANDING4_w5_norm_150k.csv & STANDING4_w15_norm_150k.csv
 ```
 
 ### And coding style tests
