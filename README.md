@@ -245,13 +245,12 @@ Set *path_prefix='~ Documents'*(the data-raw folder) and run the file.(It may re
                 └── STANDING4_w5_norm_150k.csv & STANDING4_w15_norm_150k.csv
 ```
 
-### And coding style tests
+### Run the 1° Model - LSTM_binary_clissifier.py
+Set *path_prefix='~ Documents'*(the data-raw folder).\
+Set the filtering window *w=15 or 5*.\
+Set the normalization window *norm_w=25k, 75k or 150k*(Only if we enable the temporal normalization - 2).\
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
 ## Authors
 
