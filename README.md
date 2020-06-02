@@ -253,6 +253,7 @@ Set the normalization window *norm_w=25k, 75k or 150k*(Only if we enable the tem
 We have to decide between:
 * 1 - NORMALIZATION ON THE ENTIRE DATASET 
 * 2 - TEMPORAL NORMALIZATION
+
 Comment/Uncomment the related sections at the beginning(for loading) and insiede the main(for testing).
 
 ## Authors
