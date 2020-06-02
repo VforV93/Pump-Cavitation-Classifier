@@ -245,19 +245,18 @@ Set *path_prefix='~ Documents'*(the data-raw folder) and run the file.(It may re
                 └── STANDING4_w5_norm_150k.csv & STANDING4_w15_norm_150k.csv
 ```
 
-### Run the 1° Model - LSTM_binary_clissifier.py
+### Run the 1°/2° Model - LSTM_binary_clissifier.py/CNN-LSTM_binary_classifier.py
 Set *path_prefix='~ Documents'*(the data-raw folder).\
+
+Parameters to load the Data:
 Set the filtering window *w=15 or 5*.\
 Set the normalization window *norm_w=25k, 75k or 150k*(Only if we enable the temporal normalization - 2).
 
-We have to decide between:
+It is necessary to decide between:
 * 1 - NORMALIZATION ON THE ENTIRE DATASET 
 * 2 - TEMPORAL NORMALIZATION
 
-Comment/Uncomment the related sections at the beginning(for loading) and insiede the main(for testing).
+Comment/Uncomment the related sections at the beginning(for loading) and in the main(for testing) of the files.
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Author
+* **Filippo Lo Bue**
