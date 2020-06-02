@@ -250,7 +250,9 @@ Set *path_prefix='~ Documents'*(the data-raw folder).\
 Set the filtering window *w=15 or 5*.\
 Set the normalization window *norm_w=25k, 75k or 150k*(Only if we enable the temporal normalization - 2).\
 
-
+We have to choose:\
+* 1 - NORMALIZATION ON THE ENTIRE DATASET
+* 2 - TEMPORAL NORMALIZATION
 
 ## Authors
 
