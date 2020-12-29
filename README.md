@@ -3,7 +3,7 @@
 A general approach will be briefly explained here for the classification and identification of the cavitation problem within the hydraulic pumps using signals collected through accelerometers placed inside the pumps.
 In essence, the approach that will be described can be applied to any set of temporal data because it does not make use of hand-built features but it is designed specifically for its autonomous extraction.
 
-&rightarrow; [Read the short presentation about the Project & Results](https://www.overleaf.com/read/zcksfkbswhnc)
+&rightarrow; [Read the short presentation about the Project & Results](https://www.overleaf.com/read/gpyyjkmkysfn)
 
 ## Getting Started
 
